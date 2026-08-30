@@ -4,9 +4,14 @@
   "description": "",
   "license": "ISC",
   "author": "",
+  "private": true,
   "type": "commonjs",
   "main": "index.js",
+  "workspaces": [
+    "packages/react-frontend"
+  ],
   "scripts": {
+    "dev": "npm run dev --workspace=react-frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
