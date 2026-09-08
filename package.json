@@ -8,7 +8,8 @@
   "type": "commonjs",
   "main": "index.js",
   "workspaces": [
-    "packages/react-frontend"
+    "packages/react-frontend",
+    "packages/express-backend"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=react-frontend",
