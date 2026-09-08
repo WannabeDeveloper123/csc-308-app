@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=react-frontend",
+    "server": "npm run dev --workspace=express-backend",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
