@@ -93,7 +93,7 @@ test('containsNumbers -- single digit character', () => {
   expect(result).toBe(target);
 });
 
-// bug: isNaN('e') is false since 'e' looks like exponential notation to Number()
+// bug: isNaN('e') is false because Number("e") is treated as exponential notation. Arithmetic characters are also not NaN on their own, and hence return True.
 test('containsNumbers -- string with only "e" doesnt contain numbers', () => {
   const target = false;
   const result = myFunctions.containsNumbers('e');
