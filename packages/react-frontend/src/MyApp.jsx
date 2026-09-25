@@ -21,7 +21,7 @@ function MyApp() {
 
 function removeOneCharacter(index) {
   const person = characters[index];
-  fetch(`http://localhost:8000/users/${person.id}`, { method: "DELETE" })
+  fetch(`http://localhost:8000/users/${person._id}`, { method: "DELETE" })
     .then((res) => {
       if (res.status == 204) {
         setCharacters(characters.filter((c, i) => i != index));
